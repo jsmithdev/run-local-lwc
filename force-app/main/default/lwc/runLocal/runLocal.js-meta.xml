@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="urn:metadata.tooling.soap.sforce.com" fqn="LWC_NAME">
+    <apiVersion>50.0</apiVersion>
+    <isExposed>true</isExposed>
+  
+    <masterLabel>Run Local</masterLabel>
+  
+    <description>Run / hit a locally running route</description>
+
+    <targets>
+        <target>lightning__RecordPage</target>
+        <target>lightning__AppPage</target>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+
+    <targetConfigs> 
+
+        <targetConfig targets="lightning__RecordPage">
+            <property name="header" type="String" ></property>
+            <property name="label" type="String" ></property>
+            <property name="address" type="String" ></property>
+        </targetConfig>
+      
+        <targetConfig targets="lightning__AppPage">
+            <property name="header" type="String" ></property>
+            <property name="label" type="String" ></property>
+            <property name="address" type="String" ></property>
+        </targetConfig>
+      
+        <targetConfig targets="lightningCommunity__Default">
+            <property name="header" type="String" ></property>
+            <property name="label" type="String" ></property>
+            <property name="address" type="String" ></property>
+            <property name="recordId" type="String" ></property>
+        </targetConfig>
+
+    </targetConfigs> 
+
+</LightningComponentBundle>
